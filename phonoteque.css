@@ -1,6 +1,6 @@
 /*Début Page Accueil*/
 body {
-    background-color: gray;
+    background-color: rgb(83, 83, 83);
 }
 
 #fullaccueil {
@@ -15,6 +15,8 @@ body {
 }
 
 #nouveauteaccueil {
+    background-color: rgb(58, 58, 58);
+    color: rgb(255, 242, 221);
     display: flex;
     flex-direction: column;
     text-align: right; 
@@ -27,6 +29,8 @@ body {
 }
 
 #hitaccueil {
+    background-color: rgba(122, 122, 122, 0.733);
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -39,6 +43,7 @@ body {
 }
 
 #classicaccueil {
+    background-color: rgba(230, 230, 230, 0.781);
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -88,8 +93,9 @@ hr {
 
 h2 {
     text-decoration: underline;
+    color: white;
     text-align: center;
-    text-shadow: 2px 2px 2px rgb(207, 2, 2);
+    text-shadow: 2px 2px 20px rgb(207, 2, 2);
 }
 
 #categorieaccueil {
@@ -99,11 +105,13 @@ h2 {
 }
 
 .pochetteaccueil {
+    position: relative;
     width: 90%;
 }
 
 .pochetteaccueil img {
-    position: relative;
+    position: absolute;
+    z-index: 1;
     text-align: center;
     color: white;
     width: 100%;
@@ -111,11 +119,35 @@ h2 {
 }
 
 .buttoncategorieaccueil {
-    /*display: none;*/
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+    background-color: rgba(110, 18, 18, 0.61);
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    font-family: cursive;
+    width: 100%;
+    height: 45vh;
+    align-content: center;
 }
 
+.pochetteaccueil:hover .buttoncategorieaccueil{
+    display: block;
+}
+
+input {
+    width: 70%;
+    height: 50%;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input:hover {
+    background-color: rgba(255, 255, 255, 0.582);
+    color: rgb(88, 17, 17);
+    font-weight: bold;
+}
 /*Fin Page Accueil*/
