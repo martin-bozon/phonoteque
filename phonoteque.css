@@ -292,3 +292,41 @@ header a:hover:not(#lastaH)
         padding-right: 1vw;
         padding-left: 1vw;
     }
+/* Footer */
+footer
+    {
+        height: 25vh;
+        background-image: url("image/background-gris.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+/* Class main */
+.mainstyle
+    {
+        display: flex;
+        flex-direction: column;
+    }
+.Artiste
+    {
+        display: flex;
+        flex-direction: column;
+    }
+.Titre
+    {
+        /* font-size: 35px; a voir pour la taille */
+    }
+.Pochette
+    {
+        display: flex;
+        flex-direction: row;
+    }
+.Musique
+    {
+        display: flex;
+        flex-direction: row;
+    }
+.Boxmusique
+    {
+        display: flex;
+        flex-direction: column;
+    }
