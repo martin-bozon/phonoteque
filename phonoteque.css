@@ -1,35 +1,37 @@
 @-webkit-keyframes fadein 
     {
-    from {
-        opacity:0;
-     }
-    to {
-        opacity:1;
-        }
+    from {opacity:0;}
+    to {opacity:1;}
     }   
 @keyframes fadein 
     {
-    from 
-        {
-            opacity:0;
-        }
-        to {
-            opacity:1;
-        }
+    from {opacity:0;}
+        to {opacity:1}
     }
 @-moz-keyframes fadein
     { 
-    from {
-        opacity:0;
+    from {opacity:0;}
+    to {opacity:1;}
     }
-    to {
-            opacity:1;
-        }
+@keyframes apparition 
+    {
+        0%   { margin-left: -30%;opacity:0; }
+        100% { margin-left: 0;opacity:1; }
+    }
+@-webkit-keyframes apparition 
+    {
+        0%   { margin-left: -30%;opacity:0; }
+        100% { margin-left: 0;opacity:1; }
+    }
+@-moz-keyframes apparition
+    {
+        0%   { margin-left: -30%;opacity:0; }
+        100% { margin-left: 0;opacity:1; }
     }
 html    
     {
         margin: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
     }
 body
     {
@@ -60,7 +62,7 @@ header
         background-position: center;
         background-size: cover;
     }
-form header 
+header form 
     {
         margin-bottom: 3vh;
     }
@@ -95,7 +97,7 @@ form header
         margin-top: 3vh;
         width: 90%;
     }
-#navheader
+#navheader-accueil
     {
         width: 100%;
     }
@@ -105,7 +107,7 @@ nav
         flex-direction: row;
         justify-content: center;
     }
-#navheader a
+#navheader-accueil a
     {
         padding-left: 1vw;
         padding-right: 1vw;
@@ -115,14 +117,14 @@ nav
         text-decoration: none;
         color: rgb(134, 31, 31);
     }
-#navheader ul
+#navheader-accueil ul
     {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         list-style-type: none;
     }
-#navheader li:hover
+#navheader-accueil li:hover
     {
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
@@ -131,11 +133,11 @@ nav
         box-shadow: -2px 2px 7px black;
         background-color: white;
     }
-#navheader li:hover a
+#navheader-accueil li:hover a
     {
         color: red;
     }
-#navheader nav ul li ul
+#navheader-accueil nav ul li ul
     {
         display: flex;
         flex-direction: column;
@@ -144,7 +146,7 @@ nav
         display: none;
         height: 30vh;
     }
-#navheader nav ul li:hover ul 
+#navheader-accueil nav ul li:hover ul 
     {
         display: flex;
         flex-direction: column;
@@ -159,12 +161,12 @@ nav
         animation: fadein 2s;
         -moz-animation: fadein 2s;
     }
-#navheader nav ul li:hover ul a 
+#navheader-accueil nav ul li:hover ul a 
     {
         font-size: 20px;
         color: rgb(100, 29, 29);
     }
-#navheader nav ul li:hover ul a:hover
+#navheader-accueil nav ul li:hover ul a:hover
     {
         color: red;
     }
@@ -173,6 +175,10 @@ nav
     {
         display: flex;
         flex-direction: column;
+    }
+.headerstyle h1 
+    {
+        font-size: 45px;
     }
 #navHstyle
     {
@@ -193,7 +199,6 @@ nav
     {
         display: flex;
         flex-grow: 3;
-        font-size: 40px;
     }
 #choixheader
     {
@@ -206,13 +211,20 @@ nav
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 100%;
-        width: 100%;
+        height: 70%;
+        width: 55%;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
         position: fixed;
         background-image: url("image/background-gris.jpg");
         background-size: cover;
-        top:0px;
-        left: 0px;
+        top:5%;
+        left: 25%;
+        -webkit-animation: apparition 2s;
+        animation: apparition 2s;
+        -moz-animation: apparition 2s;
     }
 #logocroixheader
     {
@@ -250,4 +262,33 @@ header a:hover:not(#lastaH)
         box-shadow: -2px 2px 7px black;
         background-color: white;
         color: red;
+    }
+#navancrage
+    {
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 10vh;
+        margin-bottom: 5vh;
+        border: 1px solid black;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        background-color: rgb(54, 54, 54);
+    }
+#navancrage a
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        padding-right: 1vw;
+        padding-left: 1vw;
     }
