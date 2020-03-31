@@ -1,0 +1,121 @@
+/*Début Page Accueil*/
+body {
+    background-color: gray;
+}
+
+#fullaccueil {
+    display: flex;
+    flex-direction: column;
+}
+
+#lecteursaccueil {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+}
+
+#nouveauteaccueil {
+    display: flex;
+    flex-direction: column;
+    text-align: right; 
+    padding-right: 3%;
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(207, 2, 2);
+    margin-left: 20%;
+}
+
+#hitaccueil {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 3%;
+    border-bottom: 2px black solid;
+    border-left: 2px black solid;
+    border-radius: 10px;
+    box-shadow: -3px 3px 5px rgb(207, 2, 2);
+    margin-right: 20%;
+}
+
+#classicaccueil {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    border-bottom: 2px black solid;
+    border-top: 2px black solid;
+    border-radius: 10px;
+    box-shadow: 3px -3px 3px rgb(207, 2, 2);
+}
+
+.audioaccueil {
+    display: flex;
+    flex-direction: column;
+}
+
+.song {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#hitaccueil .song {
+    justify-content: start;
+}
+
+#classicaccueil h3 {
+    text-align: center;
+}
+
+#classicaccueil .song {
+    justify-content: center;
+}
+
+.song p {
+    width: auto;
+    margin: 2%;
+}
+
+hr {
+    width: 70%;
+    margin-top: 3%;
+    border: 2px rgb(207, 2, 2) outset;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(207, 2, 2);
+}
+
+#categorieaccueil {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.pochetteaccueil {
+    width: 90%;
+}
+
+.pochetteaccueil img {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 45vh;
+}
+
+.buttoncategorieaccueil {
+    /*display: none;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Fin Page Accueil*/
