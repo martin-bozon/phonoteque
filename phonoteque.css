@@ -34,22 +34,66 @@ html
 body
     {
         margin: 0;
+        width: 100%;
     }
 ul
     {
         margin: 0;
     }
+header a
+    {
+        text-decoration: none;
+    }
+header li
+    {
+        list-style-type: none;
+    }
 /* Header Accueil */
-#header-accueil
+header
     {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         height: 65%;
-        background-image: url("image/background_gris.jpg");
+        background-image: url("image/background-gris.jpg");
         background-position: center;
         background-size: cover;
+    }
+form header 
+    {
+        margin-bottom: 3vh;
+    }
+#recherche-header
+    {
+        display: flex;
+        flex-direction: row;
+    }
+#rechercher
+    {
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        outline: none;
+        height: 6vh;
+        text-align: center;
+        box-shadow: -2px 2px 7px black;
+    }
+#boutonrecherche
+    {
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        outline: none;
+        box-shadow: -2px 2px 7px black;
+        height: 6vh;
+    }
+#ulheader
+    {
+        margin-top: 3vh;
+        width: 90%;
     }
 #navheader
     {
@@ -71,6 +115,13 @@ nav
         text-decoration: none;
         color: rgb(134, 31, 31);
     }
+#navheader ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
 #navheader li:hover
     {
         border-top-left-radius: 10px;
@@ -83,18 +134,6 @@ nav
 #navheader li:hover a
     {
         color: red;
-    }
-#ulheader
-    {
-        margin-top: 3vh;
-        width: 90%;
-    }
-#navheader ul
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        list-style-type: none;
     }
 #navheader nav ul li ul
     {
@@ -129,33 +168,86 @@ nav
     {
         color: red;
     }
-form header 
+/* Header Style */
+#headerstyle
     {
-        margin-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
     }
-#recherche-header
+#navHstyle
+    {
+        display: flex;
+        flex-grow: 6;
+        justify-content: flex-start;
+        padding-left: 3vw;
+    }
+#menuheader
     {
         display: flex;
         flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
     }
-#rechercher
+#menuheader h1
+    {
+        display: flex;
+        flex-grow: 3;
+        font-size: 40px;
+    }
+#choixheader
+    {
+        display:none;
+        font-size: 25px;
+    }  
+#choixheader:target
+    {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background-image: url("image/background-gris.jpg");
+        background-size: cover;
+        top:0px;
+        left: 0px;
+    }
+#logocroixheader
+    {
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+#logocroixheader:hover  
+    {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+header hr
+    {
+        width: 20%;
+
+    }
+header a
     {
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-right-radius: 30px;
         border-bottom-left-radius: 30px;
-        outline: none;
-        height: 6vh;
-        text-align: center;
-        box-shadow: -2px 2px 7px black;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        color: rgb(134, 31, 31);
     }
-#boutonrecherche
+header a:hover:not(#lastaH)
     {
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
         border-top-right-radius: 30px;
         border-bottom-left-radius: 30px;
-        outline: none;
+        padding-right: 1vw;
+        padding-left: 1vw;
         box-shadow: -2px 2px 7px black;
-        height: 6vh;
+        background-color: white;
+        color: red;
     }
