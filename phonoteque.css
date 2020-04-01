@@ -101,10 +101,11 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 45vh;
 }
 
 .pochetteaccueil {
-    position: relative;
+    position: relative; 
     width: 90%;
 }
 
