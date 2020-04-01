@@ -144,7 +144,7 @@ nav
         justify-content: space-evenly;
         align-items: center;
         display: none;
-        height: 30vh;
+        height: 50vh
     }
 #navheader-accueil nav ul li:hover ul 
     {
@@ -356,6 +356,7 @@ footer a:hover
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 .Titre
     {
@@ -365,6 +366,8 @@ footer a:hover
     {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
 .Musique
     {
@@ -375,19 +378,34 @@ footer a:hover
     {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        margin-bottom: 10vh;
+    }
+.Sons
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+audio
+    {
+        margin: 10px;
     }
 .flipflap
     {
         background-color: transparent;
-        width: 300px;
-        height: 300px;
-        /* perspective: 1000px; */
+        width: 20vw;
+        height: 50vh
     }
 .flipflappochette
     {
         position: relative;
-        width: 100%;
-        height: 100%;
+        width: 20vw;
+        height: 50vh;
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
@@ -400,23 +418,44 @@ footer a:hover
 .front, .back
     {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 20vw;
+        height: 50vh;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
-.front
-    {
-
-    }
 .back
     {
-        background-color: #2980b9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(134, 31, 31);
         color: white;
         transform: rotateY(180deg);
     }
+.imgpochette
+    {
+        width: 20vw;
+        height: 50vh
+    }
+.Pochette h1
+    {
+        font-size: 30px;
+        margin: 0;
+    }
 .logotwitter
     {
-        width: 10vw;
+        width: 5vw;
+    }
+main hr
+    {
+        border: 2px solid black;
+        width: 50%;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+.Boxmusique p
+    {
+        margin: 0;
     }
 /* Rap FR */
