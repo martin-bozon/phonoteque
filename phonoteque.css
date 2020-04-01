@@ -1,5 +1,5 @@
 /*Début Page Accueil*/
-body {
+#bodyaccueil {
     background-color: rgb(83, 83, 83);
 }
 
@@ -82,8 +82,7 @@ body {
     width: auto;
     margin: 2%;
 }
-
-hr {
+.hraccueil {
     width: 70%;
     margin-top: 3%;
     border: 2px rgb(207, 2, 2) outset;
@@ -91,7 +90,7 @@ hr {
     box-shadow: 2px 2px 3px black;
 }
 
-h2 {
+.h2accueil {
     text-decoration: underline;
     color: white;
     text-align: center;
@@ -136,16 +135,17 @@ h2 {
     display: block;
 }
 
-input {
+.inputaccueil {
     width: 70%;
     height: 50%;
     border-radius: 50%;
     text-align: center;
     cursor: pointer;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline: none;
 }
 
-input:hover {
+.inputaccueil:hover {
     background-color: rgba(255, 255, 255, 0.582);
     color: rgb(88, 17, 17);
     font-weight: bold;
