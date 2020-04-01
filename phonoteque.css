@@ -61,6 +61,7 @@ header
         background-image: url("image/background-gris.jpg");
         background-position: center;
         background-size: cover;
+        border-bottom: 2px solid black;
     }
 header form 
     {
@@ -75,8 +76,8 @@ header form
     {
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         outline: none;
         height: 6vh;
         text-align: center;
@@ -86,8 +87,8 @@ header form
     {
         border-top-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        border-top-right-radius: 30px;
-        border-bottom-left-radius: 30px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         outline: none;
         box-shadow: -2px 2px 7px black;
         height: 6vh;
@@ -171,7 +172,7 @@ nav
         color: red;
     }
 /* Header Style */
-#headerstyle
+.headerstyle
     {
         display: flex;
         flex-direction: column;
@@ -180,15 +181,15 @@ nav
     {
         display: flex;
         justify-content: center;
-        flex-basis: 40%;
+        flex-basis: 85%;
         font-size: 45px;
     }
 #navHstyle
     {
         display: flex;
-        flex-basis: 60%;
+        flex-basis: 15%;
         justify-content: flex-start;
-        padding-left: 3vw;
+        align-self: flex-start;
     }
 #logomenuH
     {
@@ -207,6 +208,7 @@ nav
 #menuheader h1
     {
         display: flex;
+        align-items: center;
         flex-grow: 3;
     }
 #choixheader
@@ -234,6 +236,7 @@ nav
         -webkit-animation: apparition 2s;
         animation: apparition 2s;
         -moz-animation: apparition 2s;
+        z-index: 1000;
     }
 #logocroixheader
     {
@@ -312,8 +315,9 @@ footer
         background-image: url("image/background-gris.jpg");
         background-position: center;
         background-size: cover;
+        border-top: 1px solid black;
     }
-nav 
+footer nav 
     {
         width: 100%;
         display: flex;
@@ -351,16 +355,30 @@ footer a:hover
         display: flex;
         flex-direction: column;
         margin: 0;
+        background: linear-gradient(white,grey, white);
     }
 .Artiste
     {
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border: 1px solid black;
+        margin-top: 5vh;
+        padding-bottom: 5vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        box-shadow:-2px 2px 7px black;
     }
 .Titre
     {
+        text-decoration: underline;
+        text-underline-position: under;
         font-size: 35px;
+        color: white;
     }
 .Pochette
     {
@@ -374,13 +392,28 @@ footer a:hover
         display: flex;
         flex-direction: row;
     }
+.Musique hr 
+    {
+        border: 1px solid black;
+        width: 50%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
 .Boxmusique
     {
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex-grow: 1;
+        width: 100%;
         margin-bottom: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border: 1px solid black;
+        box-shadow:-2px 2px 7px black;
     }
 .Sons
     {
@@ -391,25 +424,31 @@ footer a:hover
         width: 100%;
         height: 100%;
     }
+.Sons section
+    {
+        width: 80%;
+    }
 audio
     {
+        width: 100%;
         margin: 10px;
+        outline: none;
     }
 .flipflap
     {
-        background-color: transparent;
-        width: 20vw;
+        /* background-color: transparent; */
+        width: 25vw;
         height: 50vh
     }
 .flipflappochette
     {
-        position: relative;
-        width: 20vw;
+        /* position: relative; */
+        width: 25vw;
         height: 50vh;
         text-align: center;
         transition: transform 0.6s;
         transform-style: preserve-3d;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: -2px 2px 7px black;
     }
 .flipflap:hover .flipflappochette
     {
@@ -418,7 +457,7 @@ audio
 .front, .back
     {
         position: absolute;
-        width: 20vw;
+        width: 25vw;
         height: 50vh;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
@@ -435,7 +474,7 @@ audio
     }
 .imgpochette
     {
-        width: 20vw;
+        width: 25vw;
         height: 50vh
     }
 .Pochette h1
@@ -452,10 +491,67 @@ main hr
         border: 2px solid black;
         width: 50%;
         margin-top: 10vh;
-        margin-bottom: 5vh;
+        margin-bottom: 10vh;
     }
 .Boxmusique p
     {
         margin: 0;
+        font-style: italic;
+    }
+.artistebold
+    {
+        font-weight: bold;
+        font-style: normal;
     }
 /* Rap FR */
+#artisterapfr
+    {
+        background: radial-gradient(grey,rgba(21, 50, 166, 0.712));
+    }
+#hitrapfr
+    {
+        background: radial-gradient(grey,rgba(21, 50, 166, 0.712));
+    }
+#classiquerapfr
+    {
+        background: radial-gradient(grey,rgba(21, 50, 166, 0.712));
+    }
+/* Reggae */
+#artistereggae
+    {
+        background: radial-gradient(grey,rgba(21, 166, 43, 0.712));
+    }
+#hitreggae
+    {
+        background: radial-gradient(grey,rgba(21, 166, 43, 0.712));
+    }
+#classiquereggae
+    {
+        background: radial-gradient(grey,rgba(21, 166, 43, 0.712));
+    }
+/* Rap US */
+#artisterapus
+    {
+        background: radial-gradient(grey,rgba(166, 135, 21, 0.712));
+    }
+#hitrapus
+    {
+        background: radial-gradient(grey,rgba(166, 135, 21, 0.712));
+    }
+#classiquerapus
+    {
+        background: radial-gradient(grey,rgba(166, 135, 21, 0.712));
+    }
+/* Variétés */
+#artistevarietes
+    {
+        background: radial-gradient(grey,rgba(154, 21, 166, 0.712));
+    }
+#hitvarietes
+    {
+        background: radial-gradient(grey,rgba(154, 21, 166, 0.712));
+    }
+#classiquevarietes
+    {
+        background: radial-gradient(grey,rgba(154, 21, 166, 0.712));
+    }
